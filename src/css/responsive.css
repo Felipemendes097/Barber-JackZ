@@ -1,0 +1,40 @@
+@media(max-width: 425px) {
+    .banner {
+        height: 60vh;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
+    }
+
+    .item {
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .styles {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    
+
+    .contact .logo-footer h2 {
+        margin-right: 5px;
+        font-size: 2rem;
+    }
+
+    div.socials a{
+       padding: 0;   
+    }
+    
+}

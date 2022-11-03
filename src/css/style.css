@@ -1,0 +1,173 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display:grid;
+    grid-template-areas: "header header"
+                          "banner banner"
+                          "about about"
+                          "styles styles"
+                          "services services"
+                          "contact contact";
+    grid-template-columns: repeat(2, 1fr);  
+    font-size: 1.6rem;
+    font-family: 'Josefin Sans', sans-serif;    
+    background-color: #000;
+    color: white;                
+    
+}
+
+.header{
+    grid-area: header;
+    background-color: #FFF;
+}
+
+.header .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    min-height: 70px;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.header a:hover h1{
+    color: #FFF;
+    background-color: #ff7f50
+}
+
+.banner{
+    grid-area: banner;
+    height: 80vh;
+    background: url('../images/capa-01.png') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner h2{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.about{
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: var(--max-width-size);
+    margin: 0 auto;
+}
+
+.item{
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.item h3{
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.item p{
+    font-size: 1.8rem;
+    margin: 30px 0;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+}
+
+.about .img.right{
+    background: url('../images/sobre-mim.jpg') center center no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid #FFF;
+}
+
+.styles{
+    grid-area: styles;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: var(--max-width-size);
+    margin: 0 auto;
+    border-bottom: 2px solid #FFF;
+}
+
+.styles .img.left{
+    background: url('../images/estilos-novos.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.services{
+    grid-area: services;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: var(--max-width-size);
+    margin: 0 auto;
+
+}
+
+.services .service{
+    padding: 50px 20px;
+}
+
+.services .service h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.services .service p{
+    font-size: 2rem;
+    max-width: 400px;
+}
+
+.table-service{
+    height: 100%;
+    width: 100%;
+}
+
+.contact{
+    grid-area: contact;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background-color: #FFF;
+    
+}
+
+.contact .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 20px 0;
+}
+
+.contact h2{
+    transition: 0.3s ease-in-out;
+}
+
+.contact h2:hover{
+    background-color: #ff7f50;
+    color: #FFF;
+}
+
+
+div.socials a{
+   padding: 5px;
+   font-size: 20px;
+   transition: 0.3s ease-in-out;
+}
+
+
