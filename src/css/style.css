@@ -45,7 +45,7 @@ body{
 .banner{
     grid-area: banner;
     height: 80vh;
-    background: url('../images/capa-01.png') center center no-repeat;
+    background: url('../images/capa-01.jpg') center center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
